@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <title>RenovatuMundo</title>
+    <script src="js/language-detection.js" async></script>
+</head>
+
+<body>
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+
+    <!-- Header -->
+    <header class="section p-0 sticky-top bg-accent-primary overflow-visible">
+        <div class="r-container">
+            <div class="logo-container bg-accent-primary pt-2 pb-2 position-absolute">
+                <a class="navbar-brand header-logo_wrapper" href="#"><img src="image/logo.png" alt="RenovaTuMundo"
+                        class="img-fluid header-logo"></a>
+            </div>
+        </div>
+        <div class="header-line bg-text-color py-3">
+            <div class="r-container">
+                <div
+                    class="header-line-content d-flex flex-xl-row flex-row gap-xl-5 px-2 px-xl-0 gap-2 justify-content-end text-white align-items-center font-2">
+                    <a href="tel:+34604866127" class="d-flex  flex-row align-items-center gap-2"
+                        style="text-decoration: none; color: white;  display: inline;">
+                        <i class="rtmicon rtmicon-classic-phone text-white"></i>
+                        +34 604 86 61 27 (Es)
+                    </a>
+                    <a href="tel:+34641166713" class="d-flex  flex-row align-items-center gap-2"
+                        style="text-decoration: none; color: white;  display: inline;">
+                        <i class="rtmicon rtmicon-classic-phone text-white"></i>
+                        +34 641 16 67 13 (Eng, Rus, Ukr)
+                    </a>
+                    <span class="d-flex flex-row accent-color align-items-center gap-2">
+                        <i class="rtmicon rtmicon-location text-accent-color"></i>
+                        Valencia
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="r-container">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid ps-xl-0 ps-3 pe-xl-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered accent-color-2"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    English
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/es">Español</a></li>
+                                    <li><a class="dropdown-item" href="/ru">Русский</a></li>
+                                    <li><a class="dropdown-item" href="/ua">Українська</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Banner -->
+        <div class="section position-relative hero-section" style="padding-bottom: 15rem; overflow: hidden;">
+            <video id="heroVideo" autoplay muted playsinline loop preload="metadata" webkit-playsinline="true"
+                x-webkit-airplay="allow" class="position-absolute top-0 start-0 w-100 h-100"
+                style="object-fit: cover; z-index: 0;">
+                <source id="videoSource" src="video/hero-1.mp4" type="video/mp4">
+                <!-- Fallback image if video doesn't load -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-fallback" style="background-image: url('image/BG.png');"></div>
+            <div class="bg-overlay"></div>
+            <!-- <img src="../image/BG.png" class="img-fluid h-100 w-100 position-absolute top-0 bottom-0 start-0 end-0"
+                alt="" style="z-index: 1;"> -->
+
+
+            <div data-aos="fade-right" class="r-container position-relative h-100 d-flex align-items-end"
+                style="z-index: 15;;">
+                <div class="row row-cols-xl-2 row-cols-1 w-100">
+                    <div class="col" style="max-width: 767px; width: 100%;">
+                        <div class="d-flex flex-column gap-3 " style="max-width: 767px; width: 100%;">
+                            <h6 class="text-white" style="text-transform: unset;">«RenovaTuMundo» - technological
+                                right approach to repair</h6>
+                            <h1 class="fw-bold text-white" style="line-height: 1;">Apartment and House Renovation.</h1>
+                            <p class="text-white">
+                                With us you will get the expected result without the headache of renovation.
+                            </p>
+                            <div class="d-flex flex-xl-row flex-column align-items-center gap-4">
+                                <button type="button"
+                                    class="btn btn-accent accent d-flex align-items-center gap-3 py-3 px-4"
+                                    data-bs-toggle="modal" data-bs-target="#estimateModal">
+                                    <i class="rtmicon rtmicon-budget-planning fs-4"></i>
+                                    <span>Get Quote</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How To Book -->
+        <div class="section overflow-visible how-to-book-section">
+            <div class="r-container">
+                <div class="row row-cols-xl-3 row-cols-1">
+                    <div class="col mb-3">
+                        <div class="card card-outline-hover rounded-0 h-100 shadow">
+                            <div class="d-flex flex-column gap-3 py-4 px-5">
+                                <div class="icon-box-2">
+                                    <i class="rtmicon rtmicon-classic-phone fs-1"></i>
+                                </div>
+                                <h5 class="fw-semibold">Request a Quote</h5>
+                                <p>Leave a request on the website, call us or email us — we will prepare an individual
+                                    commercial offer for you taking into account all your wishes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card card-outline-hover rounded-0 h-100 shadow">
+                            <div class="d-flex flex-column gap-3 py-4 px-5">
+                                <div class="icon-box-2">
+                                    <i class="rtmicon rtmicon-budget-planning fs-1"></i>
+                                </div>
+                                <h5 class="fw-semibold">Book a Consultation</h5>
+                                <p>Schedule a convenient time to meet or consult with our specialist to discuss the
+                                    details of your project and get professional recommendations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card card-outline-hover rounded-0 h-100 shadow">
+                            <div class="d-flex flex-column gap-3 py-4 px-5">
+                                <div class="icon-box-2">
+                                    <i class="rtmicon rtmicon-renovation fs-1"></i>
+                                </div>
+                                <h5 class="fw-semibold">Project Completion</h5>
+                                <p>After agreeing on all conditions and completing the work, we will ensure quality
+                                    completion of the project and provide a guarantee for the services rendered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section About Us -->
+        <div id="about" class="section bg-attach-cover pb-0" style="background-image: url(image/bg-worker-1.png);">
+            <div class="r-container">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div data-aos="fade-left" class="col col-xl-6 mb-xl-0 mb-4">
+                        <div class="d-flex flex-column gap-3 position-relative">
+                            <div class="d-flex h-100" style="align-items: flex-end;">
+                                <img src="image/worker-1.png" class="img-fluid" alt="">
+                            </div>
+                            <div
+                                class="d-flex flex-row gap-3 floating-right align-items-center justify-content-center bg-text-color p-4 text-white bottom-0 start-0">
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="d-flex flex-row align-items-center gap-2">
+                                        <i class="rtmicon rtmicon-structural" style="font-size: 50px;"></i>
+                                        <h2 class="fw-bold m-0">10+</h2>
+                                    </div>
+                                    <h6 class="fw-normal">Years of Experience</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-right" class="col col-xl-6 px-4 pb-4 mb-xl-0 mb-4">
+                        <div class="d-flex flex-column gap-3 text-xl-start text-center">
+                            <h4 class="accent-color">Company «RenovaTuMundo»</h4>
+                            <!-- <h3 class="fw-bold">Company «RenovaTuMundo».</h3> -->
+                            <p>
+                                Our company was born in Europe, where many years ago several craftsmen united for one
+                                goal — to do repairs as we would do them for ourselves: with quality, honesty and
+                                without unnecessary words.
+                            </p>
+                            <div class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                <!-- <i class="rtmicon rtmicon-design-development accent-color" style="font-size: 50px;"></i> -->
+                                <div class="d-flex flex-column align-items-xl-start align-items-center gap-2">
+                                    <!-- <h5 class="fw-bold m-0">Building quality</h5> -->
+                                    <p>We started with small apartments. Then friends of our clients began to approach
+                                        us, then their friends — so, step by step, we grew into a serious company with a
+                                        large portfolio and dozens of successful projects throughout Europe.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                <!-- <i class="rtmicon rtmicon-concept-design accent-color" style="font-size: 50px;"></i> -->
+                                <div class="d-flex flex-column align-items-xl-start align-items-center gap-2">
+                                    <!-- <h5 class="fw-bold m-0">Certified team of engineers</h5> -->
+                                    <p>Over time, we realized: we want to work where people value comfort and quality of
+                                        life. That's why we moved to Spain — a country of sun, warmth and coziness. And
+                                        here we quickly earned the trust of new clients. Why? Because we don't just do
+                                        repairs — we solve problems and save your time and nerves.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                <!-- <i class="rtmicon rtmicon-concept-design accent-color" style="font-size: 50px;"></i> -->
+                                <div class="d-flex flex-column align-items-xl-start align-items-center gap-2">
+                                    <!-- <h5 class="fw-bold m-0">Certified team of engineers</h5> -->
+                                    <p>We are recommended to friends and acquaintances — and this is the main reward for
+                                        us. We are proud that people calmly trust us with the keys to their apartment
+                                        and know: everything will be done right.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                <!-- <i class="rtmicon rtmicon-concept-design accent-color" style="font-size: 50px;"></i> -->
+                                <div class="d-flex flex-column align-items-xl-start align-items-center gap-2">
+                                    <!-- <h5 class="fw-bold m-0">Certified team of engineers</h5> -->
+                                    <p>If you have long dreamed of renovation without stress — call us. We will tell you
+                                        where to start, calculate the estimate and prove that good renovation is simple.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="section">
+            <div class="r-container">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div data-aos="fade-right" class="col col-xl-6 pe-4 pb-5 mb-xl-0 mb-3">
+                        <div class="d-flex flex-column gap-4 text-xl-start text-center">
+                            <h3 class="accent-color">Why choose us.</h3>
+                            <!-- <h3 class="fw-bold">Now is the time to build your house.</h3> -->
+                            <div class="d-flex flex-xl-row flex-column gap-5">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">01</h4>
+                                        <h6 style="text-transform: capitalize;">European experience — local approach
+                                        </h6>
+                                        <p>
+                                            Our team combines years of experience working in Europe and deep knowledge
+                                            of all the nuances of renovation in Spain. We know how to do repairs
+                                            quickly,
+                                            efficiently and at a fair price.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">02</h4>
+                                        <h6 style="text-transform: capitalize;">Full turnkey cycle</h6>
+                                        <p>
+                                            You won't have to look for different craftsmen and run around stores. We
+                                            take care of everything: from measurements and purchasing materials to
+                                            cleaning after completion.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">03</h4>
+                                        <h6 style="text-transform: capitalize;">Honesty and transparency</h6>
+                                        <p>
+                                            We always work according to estimates agreed in advance. No hidden
+                                            surcharges and
+                                            unexpected "surprises" in the process. You know what you're paying for.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3 mt-xl-5 mt-0">
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">04</h4>
+                                        <h6 style="text-transform: capitalize;">Always in touch with the client</h6>
+                                        <p>
+                                            We constantly keep you informed of the progress: photos, videos, reports and
+                                            answers to
+                                            all questions. You feel calm — we are pleased to work openly.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">05</h4>
+                                        <h6 style="text-transform: capitalize;">Results you can be proud of</h6>
+                                        <p>
+                                            Our main advertising is satisfied customers. That's why we strive to make
+                                            every project our pride and your joy.
+                                        </p>
+                                    </div>
+                                    <hr class="d-none d-xl-block">
+                                    <div
+                                        class="d-flex flex-column align-items-xl-start align-items-center text-xl-start text-center">
+                                        <div class="accent-color fw-bold mb-2" style="font-size: 1.5rem;">📞</div>
+                                        <h6 style="text-transform: none; font-weight: bold;">Want to see for yourself?
+                                        </h6>
+                                        <p class="mb-0">
+                                            Call us — we'll tell you everything in detail and calculate the cost for
+                                            your
+                                            project!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="col col-xl-6 mb-xl-0 mb-3">
+                        <div class="d-flex flex-column gap-3 position-relative h-100">
+                            <img src="image/worker-2.png" class="img-fluid h-100 ps-xl-5 pe-3 pt-3 position-relative"
+                                style="z-index: 2;" alt="">
+                            <div class="d-flex flex-row gap-3 floating-right align-items-center justify-content-center bg-text-color py-4 px-5 text-white bottom-0 start-0"
+                                style="z-index: 3;">
+
+                                <i class="rtmicon rtmicon-classic-phone" style="font-size: 50px;"></i>
+                                <div class="d-flex flex-column">
+                                    <h6 class="accent-color">Call Us Now</h6>
+                                    <a href="tel:+34604866127" style="text-decoration: none; color: white;"> +34 604
+                                        86 61 27 (Es)</a>
+                                    <a href="tel:+34641166713" style="text-decoration: none; color: white;"> +34 641
+                                        16 67 13 (Eng, Rus, Ukr)</a>
+                                </div>
+                            </div>
+                            <div class="bg-accent-color position-absolute top-0 end-0"
+                                style="width: 10rem; height: 10rem;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Counter -->
+        <div class="section bg-text-color">
+            <div class="r-container text-center text-white">
+                <div class="row justify-content-center row-cols-xl-4 row-cols-1">
+                    <div data-aos="fade-up" class="col d-flex flex-column gap-2 mb-3">
+                        <i class="rtmicon rtmicon-architect accent-color" style="font-size: 70px;"></i>
+                        <h3 class="fw-bold">50<sup>+</sup></h3>
+                        <h6>Experienced Workers</h6>
+                    </div>
+                    <div data-aos="fade-up" class="col d-flex flex-column gap-2 mb-3">
+                        <i class="rtmicon rtmicon-structural accent-color" style="font-size: 70px;"></i>
+                        <h3 class="fw-bold">10<sup>+</sup></h3>
+                        <h6>Years on the Market</h6>
+                    </div>
+                    <div data-aos="fade-up" class="col d-flex flex-column gap-2 mb-3">
+                        <i class="rtmicon rtmicon-architectural-design accent-color" style="font-size: 70px;"></i>
+                        <h3 class="fw-bold">50<sup>+</sup></h3>
+                        <h6>Completed Projects</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Services Repair -->
+        <div id="services" class="section services-repair-section">
+            <div class="r-container">
+                <div data-aos="fade-up"
+                    class="d-flex flex-column gap-3 justify-content-center align-items-center mx-auto text-center mb-5"
+                    style="max-width: 900px;">
+                    <h3 class="fw-bold">RENOVATION SERVICES</h3>
+                    <p class="text-center">
+                        Construction renovation in Valencia, Valencia region.<br>
+                        100% quality renovation. Individual design project. Step-by-step payment for completed
+                        renovation volumes.
+                    </p>
+                </div>
+
+                <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 g-4">
+                    <!-- Card 1 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="background-image: url('image/projects-1.jpg');">
+                                    <div class="overlay-content">
+                                        <h5 class="fw-semibold mb-2">Apartment Renovation in Valencia</h5>
+                                        <p class="mb-0">Cosmetic</p>
+                                        <p class="fw-bold">from €350 per m² floor area</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h5 class="fw-semibold">Apartment Renovation in Valencia</h5>
+                                    <h6 class="fw-semibold text-white">Cosmetic</h6>
+                                    <p>Comprehensive cosmetic renovation of apartments in Valencia.</p>
+                                    <p class="fw-bold accent-color">from €350 per m² floor area</p>
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#estimateModal">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="background-image: url('image/projects-2.webp');">
+                                    <div class="overlay-content">
+                                        <h5 class="fw-semibold mb-2">Apartment Renovation in Valencia</h5>
+                                        <p class="mb-0">Standard</p>
+                                        <p class="fw-bold">from €450 per m² floor area</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h5 class="fw-semibold">Apartment Renovation in Valencia</h5>
+                                    <h6 class="fw-semibold text-white">Standard</h6>
+                                    <p>Standard renovation with quality materials.</p>
+                                    <p class="fw-bold accent-color">from €450 per m² floor area</p>
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#estimateModal">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="background-image: url('image/projects-3.webp');">
+                                    <div class="overlay-content">
+                                        <h5 class="fw-semibold mb-2">Apartment Renovation in Valencia</h5>
+                                        <p class="mb-0">Designer</p>
+                                        <p class="fw-bold">from €650 per m² floor area</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h5 class="fw-semibold">Apartment Renovation in Valencia</h5>
+                                    <h6 class="fw-semibold text-white">Designer</h6>
+                                    <p>Premium designer renovation with individual project.</p>
+                                    <p class="fw-bold accent-color">from €650 per m² floor area</p>
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#estimateModal">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New row of cards -->
+                <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 g-4 mt-3">
+                    <!-- Card 4 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="background-image: url('image/projects-4.jfif');">
+                                    <div class="overlay-content">
+                                        <h5 class="fw-semibold mb-2">Tile Installation</h5>
+                                        <p class="mb-0">Professional installation</p>
+                                        <p class="fw-bold">from €25 per m²</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h5 class="fw-semibold">Tile Installation</h5>
+                                    <h6 class="fw-semibold text-white">Professional installation</h6>
+                                    <p>Quality tile installation of any complexity.</p>
+                                    <p class="fw-bold accent-color">from €25 per m²</p>
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#estimateModal">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="background-image: url('image/projects-5.jpg');">
+                                    <div class="overlay-content">
+                                        <h5 class="fw-semibold mb-2">Plumbing and Electrical Replacement</h5>
+                                        <p class="mb-0">Quality installation</p>
+                                        <p class="fw-bold">from €50 per point</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h5 class="fw-semibold">Plumbing and Electrical Replacement</h5>
+                                    <h6 class="fw-semibold text-white">Quality installation</h6>
+                                    <p>Professional replacement of plumbing and electrical systems.</p>
+                                    <p class="fw-bold accent-color">from €50 per point</p>
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#estimateModal">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" style="background-image: url('image/projects-6.jpg');">
+                                    <div class="overlay-content">
+                                        <h5 class="fw-semibold mb-2">Bathroom Renovation</h5>
+                                        <p class="mb-0">Complete renovation</p>
+                                        <p class="fw-bold">from €1000</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h5 class="fw-semibold">Bathroom Renovation</h5>
+                                    <h6 class="fw-semibold text-white">Complete renovation</h6>
+                                    <p>Full turnkey bathroom renovation.</p>
+                                    <p class="fw-bold accent-color">from €1000</p>
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#estimateModal">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="section ps-xl-0">
+            <div class="d-flex flex-column gap-4">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div data-aos="fade-right" class="col mb-3">
+                        <img src="image/clients-1.jpg" class="img-fluid img-testimonials" alt="">
+                    </div>
+                    <div data-aos="fade-left" class="col mb-3">
+                        <div class="d-flex flex-column gap-3 ps-3" style="max-width: 667px;">
+                            <h6 class="accent-color">Testimonials.</h6>
+                            <h3 class="fw-bold">What Client Say About Our Services</h3>
+                            <p>
+                                Discover what our clients say about our commitment to quality, reliability, and customer
+                                care.
+                            </p>
+                        </div>
+                        <div class="overflow-hidden floating-left mt-3">
+                            <div class="swiper swiperTestimonials">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-container p-5 justify-content-between">
+                                            <div class="d-flex flex-column gap-3">
+                                                <div class="flex-row">
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <!-- <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i> -->
+                                                </div>
+                                                <span class="font-2 fst-italic">"The entire team at Precision Handyman
+                                                    filled me with confidence and the project ran smoothly from start to
+                                                    finish. I would highly recommend Precision Handyman."</span>
+                                                <hr class="m-0">
+                                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                                    <div class="d-flex flex-row align-items-center gap-3">
+                                                        <div class="testimonial-item">
+                                                            <img src="image/clients-2.jpg"
+                                                                class="img-fluid border-light" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5>Michael Praz</h5>
+                                                            <span class="font-2 text-color-2">Designation</span>
+
+                                                        </div>
+                                                    </div>
+                                                    <i class="rtmicon rtmicon-blockquote fw-bold accent fs-1"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-container p-5 justify-content-between">
+                                            <div class="d-flex flex-column gap-3">
+                                                <div class="flex-row">
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <!-- <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i> -->
+                                                </div>
+                                                <span class="font-2 fst-italic">"The entire team at Precision Handyman
+                                                    filled me with confidence and the project ran smoothly from start to
+                                                    finish. I would highly recommend Precision Handyman."</span>
+                                                <hr class="m-0">
+                                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                                    <div class="d-flex flex-row align-items-center gap-3">
+                                                        <div class="testimonial-item">
+                                                            <img src="image/clients-3.jpg"
+                                                                class="img-fluid border-light" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5>Diandra Alexa</h5>
+                                                            <span class="font-2 text-color-2">Designation</span>
+
+                                                        </div>
+                                                    </div>
+                                                    <i class="rtmicon rtmicon-blockquote fw-bold accent fs-1"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-container p-5 justify-content-between">
+                                            <div class="d-flex flex-column gap-3">
+                                                <div class="flex-row">
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <!-- <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i> -->
+                                                </div>
+                                                <span class="font-2 fst-italic">"The entire team at Precision Handyman
+                                                    filled me with confidence and the project ran smoothly from start to
+                                                    finish. I would highly recommend Precision Handyman."</span>
+                                                <hr class="m-0">
+                                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                                    <div class="d-flex flex-row align-items-center gap-3">
+                                                        <div class="testimonial-item">
+                                                            <img src="image/clients-4.jpg"
+                                                                class="img-fluid border-light" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5>Albert Sans</h5>
+                                                            <span class="font-2 text-color-2">Designation</span>
+
+                                                        </div>
+                                                    </div>
+                                                    <i class="rtmicon rtmicon-blockquote fw-bold accent fs-1"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Project-->
+        <div id="portfolio" class="section">
+            <div class="r-container">
+                <div data-aos="fade-up" class="row row-cols-1">
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-3">
+                            <h6 class="accent-color">Renovation project photos.</h6>
+                            <h3 class="fw-bold">«RenovaTuMundo» renovation work portfolio and costs.</h3>
+                            <p>
+                                Completed apartment, house, and office renovations. Interior design projects.
+                                Finishing work on properties.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-down" class="swiper-floating-left">
+                <div class="swiper swiperImage " style="min-height: 500px;height: 100%;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="image/projects-7.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Valencia apartment renovation 72 m².</h4>
+                                            <p class="text-white projects-item-text">Work cost - €38,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="image/projects-8.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Valencia apartment renovation 80 m².</h4>
+                                            <p class="text-white projects-item-text">Renovation cost - €54,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="image/projects-9.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Valencia apartment renovation 76 m².</h4>
+                                            <p class="text-white projects-item-text">Renovation cost - €34,500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="image/projects-10.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Valencia apartment renovation 105 m².
+                                                Ayora.
+                                            </h4>
+                                            <p class="text-white projects-item-text">Work cost - €48,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="image/projects-11.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Valencia house renovation 150 m².</h4>
+                                            <p class="text-white projects-item-text">Work cost - €98,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="image/projects-12.jfif" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Chiva house renovation 265 m².</h4>
+                                            <p class="text-white projects-item-text">Work cost - €106,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section CTA -->
+        <div class="section bg-accent-4 py-0 mt-5 position-relative overflow-visible"
+            style="background-image: url(image/img14.jpg);">
+            <div class="image-overlay"></div>
+            <img src="image/BG1.png" alt="" style="position: absolute; top: 0; right: 0; width: 100%;">
+            <div class="r-container position-relative" style="z-index: 2;">
+                <div class="d-flex justify-content-center">
+                    <div class="row row-cols-xl-2 row-cols-1 w-100 align-items-center gap-5 gap-xl-0">
+                        <div class="col">
+                            <div class="d-flex flex-column gap-3" style="max-width: 667px;">
+                                <h6 class="accent-color">Book a consultation.</h6>
+                                <h3 class="fw-bold">Transform your home with professionals</h3>
+                                <p>
+                                    Ready to start a new project? Book a consultation with our specialists and
+                                    feel the difference.
+                                </p>
+                                <button class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#estimateModal" style="width: 200px;">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="floating-top w-100 start-0 right-0">
+                                <img src="image/worker-3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="section pb-0 bg-text-color bg-attach-cover" style="background-image: url(image/BG-Footer.jpg);">
+            <div class="r-container">
+                <div class="border-bottom border-light pb-xl-5 pb-0 text-white">
+                    <div class="row row-cols-xl-3 row-cols-1">
+                        <div class="col col-xl-4 mb-3">
+                            <div class="d-flex flex-column gap-3 pe-xl-5">
+                                <img src="image/logo-footer.jpg" alt="" class="img-fluid" width="140">
+                                <p class="text-white">
+                                    We are committed to providing exceptional service and quality workmanship for every
+                                    client, every time.
+                                </p>
+                                <div class="social-container mb-xl-0">
+                                    <a href="https://www.facebook.com/share/1NuxnGYsiv" target="_blank"
+                                        class="social-item-2">
+                                        <i class="fa-brands fa-xs fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com" target="_blank" class="social-item-2">
+                                        <i class="fa-brands fa-xs fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-8 mb-3">
+                            <div class="row justify-content-center row-cols-xl-2 row-cols-1">
+                                <div class="col-xl-4 mb-3">
+                                    <div class="d-flex flex-column gap-3">
+                                        <h5>Get In Touch</h5>
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                                <i class="rtmicon rtmicon-classic-phone  fs-4"></i>
+                                                <a href="tel:+34604866127" style="text-decoration: none; color: white;">
+                                                    +34 604
+                                                    86 61 27 (Es)</a>
+
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                                <i class="rtmicon rtmicon-classic-phone  fs-4"></i>
+                                                <a href="tel:+34641166713" style="text-decoration: none; color: white;">
+                                                    +34 641
+                                                    16 67 13 (Eng, Rus, Ukr)</a>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                                <i class="rtmicon rtmicon-envelope fs-4"></i>
+                                                <a href="mailto:renovatumundovalencia@gmail.com"
+                                                    style="text-decoration: none; color: white;">
+                                                    renovatumundovalencia@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section d-flex flex-xl-row flex-column gap-3 justify-content-center py-3">
+                    <span class="text-xl-center text-white text-center fs-6 font-2">
+                        Copyright © <span data-year>2024</span> RenovaTuMundo. All Rights Reserved.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video-carousel.js"></script>
+    <script src="js/vendor/fslightbox.js"></script>
+    <!-- EmailJS for static site form submissions -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/estimate-form.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const year = document.querySelector('[data-year]');
+        year.textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Estimate Modal -->
+    <div class="modal fade" id="estimateModal" tabindex="-1" aria-labelledby="estimateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 bg-text-color text-white">
+                    <h5 class="modal-title fw-bold" id="estimateModalLabel">
+                        <i class="rtmicon rtmicon-budget-planning me-2"></i>
+                        Get Quote
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <div class="mb-4">
+                        <h6 class="accent-color">Free Consultation</h6>
+                        <p class="text-color-2">Fill out the form and our specialist will contact you to discuss project
+                            details
+                            and prepare an individual proposal.</p>
+                    </div>
+
+                    <form id="estimateForm" class="form d-flex flex-column gap-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="clientName" class="form-label">Your Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="clientName" name="clientName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="clientPhone" class="form-label">Phone Number <span
+                                        class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="clientPhone" name="clientPhone" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="designStyle" class="form-label">Specify interior design style</label>
+                            <textarea class="form-control" id="designStyle" name="designStyle" rows="3"
+                                placeholder="For example: modern, loft, Scandinavian style or describe your preferences..."></textarea>
+                        </div>
+
+                        <div>
+                            <label for="callTime" class="form-label">Convenient time to call. Your wishes</label>
+                            <textarea class="form-control" id="callTime" name="callTime" rows="4"
+                                placeholder="Indicate convenient time for a call and additional wishes for the project..."></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-3 mt-3">
+                            <button type="button" class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn submit_form accent">
+                                <i class="rtmicon rtmicon-envelope me-2"></i>
+                                Send Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

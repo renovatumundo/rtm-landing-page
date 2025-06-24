@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../image/favicon.png">
+    <title>RenovatuMundo</title>
+    <script src="../js/language-detection.js" async></script>
+</head>
+
+<body>
+    <!-- Scripts -->
+    <script src="../js/vendor/jquery.min.js"></script>
+
+    <!-- Header -->
+    <header class="section p-0 sticky-top bg-accent-primary overflow-visible">
+        <div class="r-container">
+            <div class="logo-container bg-accent-primary pt-2 pb-2 position-absolute">
+                <a class="navbar-brand header-logo_wrapper" href="#"><img src="../image/logo.png" alt="RenovaTuMundo"
+                        class="img-fluid header-logo"></a>
+            </div>
+        </div>
+        <div class="header-line bg-text-color py-3">
+            <div class="r-container">
+                <div
+                    class="header-line-content d-flex flex-xl-row flex-row gap-xl-5 px-2 px-xl-0 gap-2 justify-content-end text-white align-items-center font-2">
+                    <a href="tel:+34604866127" class="d-flex  flex-row align-items-center gap-2"
+                        style="text-decoration: none; color: white;  display: inline;">
+                        <i class="rtmicon rtmicon-classic-phone text-white"></i>
+                        +34 604 86 61 27 (Es)
+                    </a>
+                    <a href="tel:07618523398" class="d-flex  flex-row align-items-center gap-2"
+                        style="text-decoration: none; color: white;  display: inline;">
+                        <i class="rtmicon rtmicon-classic-phone text-white"></i>
+                        +34 641 16 67 13 (Eng, Rus, Ukr)
+                    </a>
+                    <span class="d-flex flex-row accent-color align-items-center gap-2">
+                        <i class="rtmicon rtmicon-location text-accent-color"></i>
+                        м. Валенсія
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="r-container">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid ps-xl-0 ps-3 pe-xl-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered accent-color-2"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">
+                                    Про нас
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">
+                                    Послуги
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">
+                                    Портфоліо
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Українська
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/">English</a></li>
+                                    <li><a class="dropdown-item" href="/es">Español</a></li>
+                                    <li><a class="dropdown-item" href="/ru">Русский</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Banner -->
+        <div class="section position-relative hero-section" style="padding-bottom: 15rem; overflow: hidden;">
+            <video id="heroVideo" autoplay muted playsinline loop preload="metadata" webkit-playsinline="true"
+                x-webkit-airplay="allow" class="position-absolute top-0 start-0 w-100 h-100"
+                style="object-fit: cover; z-index: 0;">
+                <source id="videoSource" src="../video/hero-1.mp4" type="video/mp4">
+                <!-- Fallback image if video doesn't load -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-fallback" style="background-image: url('../image/BG.png');"></div>
+            <div class="bg-overlay"></div>
+            <!-- <img src="../image/BG.png" class="img-fluid h-100 w-100 position-absolute top-0 bottom-0 start-0 end-0"
+                alt="" style="z-index: 1;"> -->
+
+
+            <div data-aos="fade-right" class="r-container position-relative h-100 d-flex align-items-end"
+                style="z-index: 15;;">
+                <div class="row row-cols-xl-2 row-cols-1 w-100">
+                    <div class="col" style="max-width: 767px; width: 100%;">
+                        <div class="d-flex flex-column gap-3 " style="max-width: 767px; width: 100%;">
+                            <h6 class="text-white" style="text-transform: unset;">«RenovatuMundo» - технологічний
+                                правильний підхід до ремонту</h6>
+                            <h1 class="fw-bold text-white" style="line-height: 1;">Ремонт квартир, будинків.</h1>
+                            <p class="text-white">
+                                З нами ви отримаєте очікуваний результат без головного болю про ремонт.
+                            </p>
+                            <div class="d-flex flex-xl-row flex-column align-items-center gap-4">
+                                <button type="button"
+                                    class="btn btn-accent accent d-flex align-items-center gap-3 py-3 px-4"
+                                    data-bs-toggle="modal" data-bs-target="#estimateModal">
+                                    <i class="rtmicon rtmicon-budget-planning fs-4"></i>
+                                    <span>Отримати кошторис</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How To Book -->
+        <div class="section overflow-visible how-to-book-section">
+            <div class="r-container">
+                <div class="row row-cols-xl-3 row-cols-1">
+                    <div class="col mb-3">
+                        <div class="card card-outline-hover rounded-0 h-100 shadow">
+                            <div class="d-flex flex-column gap-3 py-4 px-5">
+                                <div class="icon-box-2">
+                                    <i class="rtmicon rtmicon-classic-phone fs-1"></i>
+                                </div>
+                                <h5 class="fw-semibold">Запросити пропозицію</h5>
+                                <p>Залиште заявку на сайті, зателефонуйте нам або напишіть на пошту — ми підготуємо для
+                                    вас індивідуальну комерційну пропозицію з урахуванням усіх ваших побажань.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card card-outline-hover rounded-0 h-100 shadow">
+                            <div class="d-flex flex-column gap-3 py-4 px-5">
+                                <div class="icon-box-2">
+                                    <i class="rtmicon rtmicon-budget-planning fs-1"></i>
+                                </div>
+                                <h5 class="fw-semibold">Записатися на консультацію</h5>
+                                <p>Узгодьте зручний час для зустрічі або консультації з нашим спеціалістом, щоб
+                                    обговорити деталі вашого проєкту і отримати професійні рекомендації.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card card-outline-hover rounded-0 h-100 shadow">
+                            <div class="d-flex flex-column gap-3 py-4 px-5">
+                                <div class="icon-box-2">
+                                    <i class="rtmicon rtmicon-renovation fs-1"></i>
+                                </div>
+                                <h5 class="fw-semibold">Завершення робіт</h5>
+                                <p>Після узгодження всіх умов і виконання робіт ми забезпечимо якісне завершення проєкту
+                                    і надамо гарантію на надані послуги.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section About Us -->
+        <div id="about" class="section bg-attach-cover pb-0" style="background-image: url(../image/bg-worker-1.png);">
+            <div class="r-container">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div data-aos="fade-left" class="col col-xl-6 mb-xl-0 mb-4">
+                        <div class="d-flex flex-column gap-3 position-relative">
+                            <div class="d-flex h-100" style="align-items: flex-end;">
+                                <img src="../image/worker-1.png" class="img-fluid" alt="">
+                            </div>
+                            <div
+                                class="d-flex flex-row gap-3 floating-right align-items-center justify-content-center bg-text-color p-4 text-white bottom-0 start-0">
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="d-flex flex-row align-items-center gap-2">
+                                        <i class="rtmicon rtmicon-structural" style="font-size: 50px;"></i>
+                                        <h2 class="fw-bold m-0">10+</h2>
+                                    </div>
+                                    <h6 class="fw-normal">Років досвіду</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-right" class="col col-xl-6 px-4 pb-4 mb-xl-0 mb-4">
+                        <div class="d-flex flex-column gap-3 text-xl-start text-center">
+                            <h4 class="accent-color">Компанія «RenovatuMundo»</h4>
+                            <!-- <h3 class="fw-bold">Компанія «RenovatuMundo».</h3> -->
+                            <p>
+                                Наша компанія народилася в Європі, де багато років тому кілька майстрів об'єдналися
+                                заради однієї мети — робити ремонт так, як ми б робили його для себе: якісно, чесно
+                                і без зайвих слів.
+                            </p>
+                            <div class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                <!-- <i class="rtmicon rtmicon-design-development accent-color" style="font-size: 50px;"></i> -->
+                                <div class="d-flex flex-column align-items-xl-start align-items-center gap-2">
+                                    <!-- <h5 class="fw-bold m-0">Строим качество</h5> -->
+                                    <p>Спочатку ми починали з невеликих квартир. Потім до нас стали звертатися друзі
+                                        наших клієнтів, потім їхні друзі — так, крок за кроком, ми виросли у серйозну
+                                        компанію з великим портфоліо і десятками успішних проєктів по всій Європі.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                <!-- <i class="rtmicon rtmicon-concept-design accent-color" style="font-size: 50px;"></i> -->
+                                <div class="d-flex flex-column align-items-xl-start align-items-center gap-2">
+                                    <!-- <h5 class="fw-bold m-0">Сертифицированная команда инженеров</h5> -->
+                                    <p>З часом ми зрозуміли: нам хочеться працювати там, де люди цінують комфорт і
+                                        якість життя. Тому ми переїхали до Іспанії — країни сонця, тепла і затишку. І
+                                        вже тут ми швидко заслужили довіру нових клієнтів. Чому? Тому що ми не
+                                        просто робимо ремонт — ми вирішуємо проблеми і економимо ваш час і нерви.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                <!-- <i class="rtmicon rtmicon-concept-design accent-color" style="font-size: 50px;"></i> -->
+                                <div class="d-flex flex-column align-items-xl-start align-items-center gap-2">
+                                    <!-- <h5 class="fw-bold m-0">Сертифицированная команда инженеров</h5> -->
+                                    <p>Нас рекомендують друзям і знайомим — і це для нас головна нагорода. Ми пишаємося
+                                        тим, що люди спокійно довіряють нам ключі від своєї квартири і знають: все буде
+                                        зроблено як треба.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-xl-row flex-column align-items-xl-start align-items-center gap-3">
+                                <!-- <i class="rtmicon rtmicon-concept-design accent-color" style="font-size: 50px;"></i> -->
+                                <div class="d-flex flex-column align-items-xl-start align-items-center gap-2">
+                                    <!-- <h5 class="fw-bold m-0">Сертифицированная команда инженеров</h5> -->
+                                    <p>Якщо ви давно мрієте про ремонт без стресу — зателефонуйте нам. Ми розповімо,
+                                        з чого почати, порахуємо кошторис і доведемо, що гарний ремонт — це просто.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="section">
+            <div class="r-container">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div data-aos="fade-right" class="col col-xl-6 pe-4 pb-5 mb-xl-0 mb-3">
+                        <div class="d-flex flex-column gap-4 text-xl-start text-center">
+                            <h3 class="accent-color">Чому обирають нас.</h3>
+                            <!-- <h3 class="fw-bold">Сейчас самое время построить свой дом.</h3> -->
+                            <div class="d-flex flex-xl-row flex-column gap-5">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">01</h4>
+                                        <h6 style="text-transform: capitalize;">Європейський досвід — місцевий підхід
+                                        </h6>
+                                        <p>
+                                            Наша команда поєднує багаторічний досвід роботи в Європі і глибоке знання
+                                            всіх нюансів ремонту в Іспанії. Ми знаємо, як зробити ремонт швидко,
+                                            якісно і за чесною ціною.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">02</h4>
+                                        <h6 style="text-transform: capitalize;">Повний цикл робіт під ключ</h6>
+                                        <p>
+                                            Вам не доведеться шукати різних майстрів і бігати по магазинах. Ми беремо на
+                                            себе все: від замірів і закупівлі матеріалів до прибирання після закінчення
+                                            робіт.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">03</h4>
+                                        <h6 style="text-transform: capitalize;">Чесність і прозорість</h6>
+                                        <p>
+                                            Ми завжди працюємо за кошторисом, узгодженим заздалегідь. Без прихованих
+                                            доплат і
+                                            несподіваних «сюрпризів» у процесі. Ви знаєте, за що платите.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column gap-3 mt-xl-5 mt-0">
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">04</h4>
+                                        <h6 style="text-transform: capitalize;">Завжди на зв'язку з клієнтом</h6>
+                                        <p>
+                                            Ми постійно тримаємо вас у курсі ходу робіт: фото, відео, звіти і відповіді
+                                            на
+                                            всі питання. Вам спокійно — нам приємно працювати відкрито.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-column align-items-xl-start align-items-center h-100">
+                                        <h4 class="accent-color fw-bold">05</h4>
+                                        <h6 style="text-transform: capitalize;">Результат, за який не соромно</h6>
+                                        <p>
+                                            Наша головна реклама — це задоволені клієнти. Тому ми намагаємося, щоб
+                                            кожен проєкт був нашою гордістю і вашою радістю.
+                                        </p>
+                                    </div>
+                                    <hr class="d-none d-xl-block">
+                                    <div
+                                        class="d-flex flex-column align-items-xl-start align-items-center text-xl-start text-center">
+                                        <div class="accent-color fw-bold mb-2" style="font-size: 1.5rem;">📞</div>
+                                        <h6 style="text-transform: none; font-weight: bold;">Хочете переконатися самі?
+                                        </h6>
+                                        <p class="mb-0">
+                                            Зателефонуйте нам — розповімо все детально і розрахуємо вартість під ваш
+                                            проєкт!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="col col-xl-6 mb-xl-0 mb-3">
+                        <div class="d-flex flex-column gap-3 position-relative h-100">
+                            <img src="../image/worker-2.png" class="img-fluid h-100 ps-xl-5 pe-3 pt-3 position-relative"
+                                style="z-index: 2;" alt="">
+                            <div class="d-flex flex-row gap-3 floating-right align-items-center justify-content-center bg-text-color py-4 px-5 text-white bottom-0 start-0"
+                                style="z-index: 3;">
+
+                                <i class="rtmicon rtmicon-classic-phone" style="font-size: 50px;"></i>
+                                <div class="d-flex flex-column">
+                                    <h6 class="accent-color">Зателефонуйте нам</h6>
+                                    <a href="tel:+34604866127" style="text-decoration: none; color: white;"> +34 604
+                                        86 61 27 (Es)</a>
+                                    <a href="tel:+34641166713" style="text-decoration: none; color: white;"> +34 641
+                                        16 67 13 (Eng, Rus, Ukr)</a>
+                                </div>
+                            </div>
+                            <div class="bg-accent-color position-absolute top-0 end-0"
+                                style="width: 10rem; height: 10rem;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Counter -->
+        <div class="section bg-text-color">
+            <div class="r-container text-center text-white">
+                <div class="row justify-content-center row-cols-xl-4 row-cols-1">
+                    <div data-aos="fade-up" class="col d-flex flex-column gap-2 mb-3">
+                        <i class="rtmicon rtmicon-architect accent-color" style="font-size: 70px;"></i>
+                        <h3 class="fw-bold">50<sup>+</sup></h3>
+                        <h6>Досвідчені робітники</h6>
+                    </div>
+                    <div data-aos="fade-up" class="col d-flex flex-column gap-2 mb-3">
+                        <i class="rtmicon rtmicon-structural accent-color" style="font-size: 70px;"></i>
+                        <h3 class="fw-bold">10<sup>+</sup></h3>
+                        <h6>Років на ринку</h6>
+                    </div>
+                    <div data-aos="fade-up" class="col d-flex flex-column gap-2 mb-3">
+                        <i class="rtmicon rtmicon-architectural-design accent-color" style="font-size: 70px;"></i>
+                        <h3 class="fw-bold">50<sup>+</sup></h3>
+                        <h6>Завершених об'єктів</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="section ps-xl-0">
+            <div class="d-flex flex-column gap-4">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div data-aos="fade-right" class="col mb-3">
+                        <img src="../image/clients-1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div data-aos="fade-left" class="col mb-3">
+                        <div class="d-flex flex-column gap-3 ps-3" style="max-width: 667px;">
+                            <h6 class="accent-color">Відгуки.</h6>
+                            <h3 class="fw-bold">Що говорять клієнти про наші послуги</h3>
+                            <p>
+                                Дізнайтеся, що говорять наші клієнти про нашу якість, надійність і турботу про кожного
+                                замовника.
+                            </p>
+                        </div>
+                        <div class="overflow-hidden floating-left mt-3">
+                            <div class="swiper swiperTestimonials">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-container p-5 justify-content-between">
+                                            <div class="d-flex flex-column gap-3">
+                                                <div class="flex-row">
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <!-- <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i> -->
+                                                </div>
+                                                <span class="font-2 fst-italic">"Роботу виконано якісно і в строк.
+                                                    Команда проявила професіоналізм на кожному етапі. Рекомендую всім,
+                                                    хто цінує надійність!"</span>
+                                                <hr class="m-0">
+                                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                                    <div class="d-flex flex-row align-items-center gap-3">
+                                                        <div class="testimonial-item">
+                                                            <img src="../image/clients-2.jpg"
+                                                                class="img-fluid border-light" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5>Michael Praz</h5>
+                                                            <span class="font-2 text-color-2">Власник квартири</span>
+
+                                                        </div>
+                                                    </div>
+                                                    <i class="rtmicon rtmicon-blockquote fw-bold accent fs-1"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-container p-5 justify-content-between">
+                                            <div class="d-flex flex-column gap-3">
+                                                <div class="flex-row">
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <!-- <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i> -->
+                                                </div>
+                                                <span class="font-2 fst-italic">"Дуже задоволений результатом! Всі
+                                                    побажання були враховані, майстри завжди були на зв'язку і
+                                                    допомагали
+                                                    порадою. Дякую за відмінний сервіс!"</span>
+                                                <hr class="m-0">
+                                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                                    <div class="d-flex flex-row align-items-center gap-3">
+                                                        <div class="testimonial-item">
+                                                            <img src="../image/clients-3.jpg"
+                                                                class="img-fluid border-light" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5>Diandra Alexa</h5>
+                                                            <span class="font-2 text-color-2">Приватний замовник</span>
+
+                                                        </div>
+                                                    </div>
+                                                    <i class="rtmicon rtmicon-blockquote fw-bold accent fs-1"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-container p-5 justify-content-between">
+                                            <div class="d-flex flex-column gap-3">
+                                                <div class="flex-row">
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                                    <!-- <i class="fa-solid fa-star" style="color: var(--text-color-1);"></i> -->
+                                                </div>
+                                                <span class="font-2 fst-italic">"Зробили ремонт швидко і акуратно.
+                                                    Приємно здивувала чистота після завершення робіт. Обов'язково
+                                                    звернуся
+                                                    знову при необхідності!"</span>
+                                                <hr class="m-0">
+                                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                                    <div class="d-flex flex-row align-items-center gap-3">
+                                                        <div class="testimonial-item">
+                                                            <img src="../image/clients-4.jpg"
+                                                                class="img-fluid border-light" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-column">
+                                                            <h5>Albert Sans</h5>
+                                                            <span class="font-2 text-color-2">Домовласник</span>
+
+                                                        </div>
+                                                    </div>
+                                                    <i class="rtmicon rtmicon-blockquote fw-bold accent fs-1"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Project-->
+        <div id="portfolio" class="section">
+            <div class="r-container">
+                <div data-aos="fade-up" class="row row-cols-1">
+                    <div class="col mb-3">
+                        <div class="d-flex flex-column gap-3">
+                            <h6 class="accent-color">Фото ремонту об'єктів.</h6>
+                            <h3 class="fw-bold">Портфоліо ремонтних робіт «RenovatuMundo» та вартість.</h3>
+                            <p>
+                                Виконані роботи з ремонту квартир, будинків, офісів. Оформлення дизайну інтер'єру
+                                приміщень. Оздоблювальні роботи на об'єктах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-down" class="swiper-floating-left">
+                <div class="swiper swiperImage " style="min-height: 500px;height: 100%;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="../image/projects-7.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Ремонт квартири у Валенсії 72 м2.</h4>
+                                            <p class="text-white projects-item-text">Вартість роботи - 38 000€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="../image/projects-8.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Ремонт квартири у Валенсії 80 м2.</h4>
+                                            <p class="text-white projects-item-text">Вартість ремонту - 54 000€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="../image/projects-9.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Ремонт квартири у Валенсії 76 м2.</h4>
+                                            <p class="text-white projects-item-text">Вартість ремонту - 34 500€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="../image/projects-10.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Ремонт квартири у Валенсії 105 м2. Ayora.
+                                            </h4>
+                                            <p class="text-white projects-item-text">Вартість роботи - 48 000€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="../image/projects-11.jpg" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Ремонт будинку у Валенсії 150 м2.</h4>
+                                            <p class="text-white projects-item-text">Вартість роботи - 98 000€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card card-overlay rounded-0 overflow-hidden">
+                                <img src="../image/projects-12.jfif" alt="" class="img-fluid">
+                                <div class="card-body">
+                                    <div
+                                        class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
+                                        <div class="text-white" style="z-index: 2; max-width: 467px;">
+                                            <h4 class="projects-item-heading">Ремонт будинку Chiva 265 м2. </h4>
+                                            <p class="text-white projects-item-text">Вартість роботи - 106 000€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section CTA -->
+        <div class="section bg-accent-4 py-0 mt-5 position-relative overflow-visible"
+            style="background-image: url(../image/img14.jpg);">
+            <div class="image-overlay"></div>
+            <img src="../image/BG1.png" alt="" style="position: absolute; top: 0; right: 0; width: 100%;">
+            <div class="r-container position-relative" style="z-index: 2;">
+                <div class="d-flex justify-content-center">
+                    <div class="row row-cols-xl-2 row-cols-1 w-100 align-items-center gap-5 gap-xl-0">
+                        <div class="col">
+                            <div class="d-flex flex-column gap-3" style="max-width: 667px;">
+                                <h6 class="accent-color">Запишіться на консультацію.</h6>
+                                <h3 class="fw-bold">Перетворіть свій дім з професіоналами</h3>
+                                <p>
+                                    Готові почати новий проєкт? Запишіться на консультацію з нашими спеціалістами і
+                                    відчуйте різницю.
+                                </p>
+                                <button class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#estimateModal" style="width: 200px;">
+                                    Отримати кошторис
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="floating-top w-100 start-0 right-0">
+                                <img src="../image/worker-3.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="section pb-0 bg-text-color bg-attach-cover" style="background-image: url(../image/BG-Footer.jpg);">
+            <div class="r-container">
+                <div class="border-bottom border-light pb-xl-5 pb-0 text-white">
+                    <div class="row row-cols-xl-3 row-cols-1">
+                        <div class="col col-xl-4 mb-3">
+                            <div class="d-flex flex-column gap-3 pe-xl-5">
+                                <img src="../image/logo-footer.jpg" alt="" class="img-fluid" width="140">
+                                <p class="text-white">
+                                    Ми гарантуємо індивідуальний підхід і високу якість робіт для кожного клієнта,
+                                    кожного разу.
+                                </p>
+                                <div class="social-container mb-xl-0">
+                                    <a href="https://www.facebook.com/share/1NuxnGYsiv" target="_blank"
+                                        class="social-item-2">
+                                        <i class="fa-brands fa-xs fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com" target="_blank" class="social-item-2">
+                                        <i class="fa-brands fa-xs fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-8 mb-3">
+                            <div class="row justify-content-center row-cols-xl-2 row-cols-1">
+                                <div class="col-xl-4 mb-3">
+                                    <div class="d-flex flex-column gap-3">
+                                        <h5>Зв'яжіться з нами</h5>
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                                <i class="rtmicon rtmicon-classic-phone  fs-4"></i>
+                                                <a href="tel:+34604866127" style="text-decoration: none; color: white;">
+                                                    +34 604
+                                                    86 61 27 (Es)</a>
+
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                                <i class="rtmicon rtmicon-classic-phone  fs-4"></i>
+                                                <a href="tel:+34641166713" style="text-decoration: none; color: white;">
+                                                    +34 641
+                                                    16 67 13 (Eng, Rus, Ukr)</a>
+                                            </div>
+                                            <div class="d-flex flex-row align-items-center font-2 gap-3">
+                                                <i class="rtmicon rtmicon-envelope fs-4"></i>
+                                                <a href="mailto:renovatumundovalencia@gmail.com"
+                                                    style="text-decoration: none; color: white;">
+                                                    renovatumundovalencia@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section d-flex flex-xl-row flex-column gap-3 justify-content-center py-3">
+                    <span class="text-xl-center text-white text-center fs-6 font-2">
+                        Copyright © <span data-year>2024</span> RenovaTuMundo. Всі права захищені.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../js/vendor/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/swiper-script.js"></script>
+    <script src="../js/vendor/isotope.pkgd.min.js"></script>
+    <script src="../js/video-carousel.js"></script>
+    <script src="../js/vendor/fslightbox.js"></script>
+    <!-- EmailJS for static site form submissions -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../js/estimate-form.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const year = document.querySelector('[data-year]');
+        year.textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Estimate Modal -->
+    <div class="modal fade" id="estimateModal" tabindex="-1" aria-labelledby="estimateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 bg-text-color text-white">
+                    <h5 class="modal-title fw-bold" id="estimateModalLabel">
+                        <i class="rtmicon rtmicon-budget-planning me-2"></i>
+                        Отримати кошторис
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <div class="mb-4">
+                        <h6 class="accent-color">Безкоштовна консультація</h6>
+                        <p class="text-color-2">Заповніть форму, і наш спеціаліст зв'яжеться з вами для обговорення
+                            деталей
+                            проєкту і підготовки індивідуальної пропозиції.</p>
+                    </div>
+
+                    <form id="estimateForm" class="form d-flex flex-column gap-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="clientName" class="form-label">Ваше ім'я <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="clientName" name="clientName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="clientPhone" class="form-label">Номер телефону <span
+                                        class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="clientPhone" name="clientPhone" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="designStyle" class="form-label">Вкажіть стиль дизайну інтер'єру</label>
+                            <textarea class="form-control" id="designStyle" name="designStyle" rows="3"
+                                placeholder="Наприклад: сучасний, лофт, скандинавський стиль або опишіть ваші вподобання..."></textarea>
+                        </div>
+
+                        <div>
+                            <label for="callTime" class="form-label">Зручний час дзвінка. Ваші побажання</label>
+                            <textarea class="form-control" id="callTime" name="callTime" rows="4"
+                                placeholder="Вкажіть зручний час для дзвінка і додаткові побажання до проєкту..."></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-3 mt-3">
+                            <button type="button" class="btn btn-outline-secondary"
+                                data-bs-dismiss="modal">Скасування</button>
+                            <button type="submit" class="btn submit_form accent">
+                                <i class="rtmicon rtmicon-envelope me-2"></i>
+                                Надіслати заявку
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

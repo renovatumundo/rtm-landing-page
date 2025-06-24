@@ -1,0 +1,29 @@
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1;
+}
+
+.dropdown-toggle, .dropdown-item {
+  color: var(--text-color-2) !important;
+}
+
+.dropdown-item:hover {
+  color: #fff !important;
+  background-color: var(--text-color-2) !important;
+}
+
+.nav-item:hover > .nav-link {
+  color: var(--text-color-2) !important
+};
+
+.nav-item:hover > .nav-link {
+  color: var(--text-color-2) !important;
+}
