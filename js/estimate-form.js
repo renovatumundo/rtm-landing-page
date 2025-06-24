@@ -2,9 +2,9 @@
 
 // Initialize EmailJS
 // Replace with your actual EmailJS configuration
-const EMAILJS_SERVICE_ID = 'service_70klpzb'; // Замініть на ваш Service ID
-const EMAILJS_TEMPLATE_ID = 'template_bekt5pp'; // Замініть на ваш Template ID
-const EMAILJS_PUBLIC_KEY = '3lwyNPt2YYAmIRWNE'; // Замініть на ваш Public Key
+const EMAILJS_SERVICE_ID = 'service_k287798'; // Замініть на ваш Service ID
+const EMAILJS_TEMPLATE_ID = 'template_5aobrhr'; // Замініть на ваш Template ID
+const EMAILJS_PUBLIC_KEY = 'CzL-mkNT7z9WQysi5'; // Замініть на ваш Public Key
 
 document.addEventListener('DOMContentLoaded', function () {
   const estimateForm = document.getElementById('estimateForm');
@@ -80,12 +80,12 @@ document.addEventListener('DOMContentLoaded', function () {
 function sendEstimateEmail(data) {
   return new Promise((resolve, reject) => {
     // Check if EmailJS is configured
-    if (EMAILJS_SERVICE_ID === 'your_service_id' ||
-      EMAILJS_TEMPLATE_ID === 'your_template_id' ||
-      EMAILJS_PUBLIC_KEY === 'your_public_key') {
-      console.warn('EmailJS not configured. Using fallback demonstration mode.');
-      return sendEstimateEmailFallback(data).then(resolve).catch(reject);
-    }
+    // if (EMAILJS_SERVICE_ID === 'service_k287798' ||
+    //   EMAILJS_TEMPLATE_ID === 'your_' ||
+    //   EMAILJS_PUBLIC_KEY === 'CzL-mkNT7z9WQysi5') {
+    //   console.warn('EmailJS not configured. Using fallback demonstration mode.');
+    //   return sendEstimateEmailFallback(data).then(resolve).catch(reject);
+    // }
 
     // Check if EmailJS is loaded
     if (typeof emailjs === 'undefined') {
