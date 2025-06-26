@@ -72,7 +72,7 @@ The project is deployed on **Vercel** with automatic updates:
 
 - **Push to main branch** → Automatic deployment
 - **Pull requests** → Preview deployments
-- **Live URL**: [https://renova-tu-mundo.com]
+- **Live URL**: [https://renovatumundo.com]
 
 ### Content Updates
 
